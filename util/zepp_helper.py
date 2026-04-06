@@ -258,7 +258,7 @@ def post_fake_brand_data(step, app_token, userid):
         "Content-Type": "application/x-www-form-urlencoded"
     }
 
-    data = f'userid={userid}&last_sync_data_time=1597306380&device_type=0&last_deviceid=DA932FFFFE8816E7&data_json={data_json}'
+    data = f'userid={userid}&last_sync_data_time=1597306380&device_type=2&last_deviceid=DA932FFFFE8816A1&data_json={data_json}'
 
     response = requests.post(url, data=data, headers=head)
     if response.status_code != 200:
